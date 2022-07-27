@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  </link>
+  <title>Weather-forcast</title>
+
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
+
+
+</head>
+
+<body onload="show()">
+  <div class="weather">
+    <input type="search" class="weather_search" placeholder="Enter City Name" list="Suggestion" />
+    <datalist id="Suggestion"></datalist>
+    <div class="weather_details">
+      <div class="weather_today">
+        <h2 class="weather_city">City</h2>
+        <p class="weather_day">Day</p>
+        <div class="weather_current">
+          <p class="weather_indicater weather_indicater--humidity">
+            <span class="value">10</span>%
+          </p>
+          <p class="weather_indicater weather_indicater--wind">
+            <span class="value">west, 5</span>m/s
+          </p>
+          <p class="weather_indicater weather_indicater--pressure">
+            <span class="value">1045</span>hPa
+          </p>
+        </div>
+      </div>
+      <img src="/images/clear-sky.png" class="weather_image" alt="sky image">
+      <div class="weather_temp">
+        <span class="value">37</span>&deg;C
+      </div>
+    </div>
+    <div class="weather_forecast">
+      <article class="weather_forcast_item">
+        <img src="/images/clear-sky.png" class="weather_forecast_icon">
+        <h3 class="weather_forecast_day">Day</h3>
+        <p class="weather_forecast_temperature">
+          <span class="value">+25</span> &deg;C
+        </p>
+      </article>
+      <article class="weather_forcast_item">
+        <img src="/images/clear-sky.png" class="weather_forecast_icon">
+        <h3 class="weather_forecast_day">Day</h3>
+        <p class="weather_forecast_temperature">
+          <span class="value">+25</span> &deg;C
+        </p>
+      </article>
+      <article class="weather_forcast_item">
+        <img src="/images/clear-sky.png" class="weather_forecast_icon">
+        <h3 class="weather_forecast_day">Day</h3>
+        <p class="weather_forecast_temperature">
+          <span class="value">+25</span> &deg;C
+        </p>
+      </article>
+      <article class="weather_forcast_item">
+        <img src="/images/clear-sky.png" class="weather_forecast_icon">
+        <h3 class="weather_forecast_day">Day</h3>
+        <p class="weather_forecast_temperature">
+          <span class="value">+25</span> &deg;C
+        </p>
+      </article>
+      <article class="weather_forcast_item">
+        <img src="/images/clear-sky.png" class="weather_forecast_icon">
+        <h3 class="weather_forecast_day">Day</h3>
+        <p class="weather_forecast_temperature">
+          <span class="value">+25</span> &deg;C
+        </p>
+      </article>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
